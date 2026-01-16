@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 60px;
+  border-radius: 16px;
+  color: white;
+
+  /* Fondo con dragón */
+  background-image:
+    linear-gradient(
+      rgba(10, 20, 30, 0.85),
+      rgba(10, 20, 30, 0.85)
+    ),
+    url("../assets/dragon.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #7dd3fc;
+  box-shadow: 0 0 20px rgba(125, 211, 252, 0.6);
+}
+
+}
