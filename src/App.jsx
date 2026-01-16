@@ -1,34 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import logo from './assets/logo.png'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+    <div className="app">
+      <header className="header">
+        <img src={logo} alt="Logo del canal" className="logo" />
+        <h1>Rompecabezas 3D & Gaming</h1>
+      </header>
+
+      <section className="hero">
+        <h2>🧩🎮 Bienvenido al canal</h2>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          Aquí armamos <strong>rompecabezas 3D pieza por pieza</strong>, desde modelos épicos
+          hasta construcciones imposibles, mientras disfrutamos de videojuegos
+          tranquilos para relajarnos y pasarla bien.
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+        <p className="extra">
+          🎥 Contenido calmado · 😄 Buen ambiente · 🧠 Mucha paciencia
+        </p>
+      </section>
+
+      <footer className="footer">
+        <p>📺 Sígueme en Twitch</p>
+      </footer>
+    </div>
   )
 }
 
