@@ -1,16 +1,79 @@
-# React + Vite
+🐉 Twitch – React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Web personal para un canal de Twitch enfocado en videojuegos, rompecabezas 3D y contenido creativo, desarrollado con React + Vite.
 
-Currently, two official plugins are available:
+El sitio funciona como carta de presentación del canal, mostrando información, contacto y enlaces a redes sociales, con una estética oscura y temática fantástica (dragón/fuego).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Tecnologías utilizadas
 
-## React Compiler
+⚛️ React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+⚡ Vite
 
-## Expanding the ESLint configuration
+🎨 CSS puro
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🧠 Componentes funcionales
+
+🖥️ Diseño responsive
+
+🔥 Estilo visual inspirado en videojuegos y fantasía
+
+🎮 Sobre el canal
+
+Este proyecto representa un canal de Twitch dedicado a:
+
+🧩 Armado de rompecabezas 3D
+
+🎮 Videojuegos (variedad y exploración)
+
+🐉 Estética épica/fantástica
+
+🎥 Contenido creativo y entretenido en vivo
+
+El sitio web sirve como:
+
+Landing page
+
+Punto de contacto para la comunidad
+
+🧩 Componentes principales
+
+Header
+Logo y presentación del canal
+
+Contact
+Información extendida, botones de redes sociales y links de prueba
+
+Sección visual inicial
+Fondo temático con dragón estático que se desvanece al hacer scroll
+
+🌐 Despliegue
+
+Este proyecto puede desplegarse fácilmente en:
+
+GitHub Pages
+
+Vercel
+
+Netlify
+
+🎨 Estilo visual
+
+Fondo oscuro
+
+Acentos rojos / fuego
+
+Animaciones suaves
+
+Inspiración gaming y fantasía
+
+Enfoque en experiencia visual limpia
+
+📌 Estado del proyecto
+
+🟢 En desarrollo
+Se agregarán más animaciones, secciones y mejoras visuales.
+
+📜 Licencia
+
+Proyecto personal – uso libre con fines educativos o demostrativos.
