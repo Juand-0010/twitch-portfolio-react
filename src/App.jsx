@@ -1,10 +1,14 @@
 import Header from "./components/Header";
-import "./App.css";
+import Contact from "./components/Contact";
+import useReveal from "./hooks/useReveal";
 
 function App() {
+  useReveal();
+
   return (
     <>
       <Header />
+      <Contact />
     </>
   );
 }
