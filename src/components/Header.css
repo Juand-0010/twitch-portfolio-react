@@ -1,30 +1,137 @@
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(240px, 1fr);
   align-items: center;
-  gap: 40px;
-  padding: 60px;
-  border-radius: 16px;
-  color: white;
-
-  /* Fondo con dragón */
+  gap: 2.5rem;
+  padding: clamp(2.5rem, 4vw, 6rem);
+  min-height: calc(100vh - 2rem);
+  border-radius: 32px;
   background-image:
-    linear-gradient(
-      rgba(10, 20, 30, 0.85),
-      rgba(10, 20, 30, 0.85)
-    ),
+    radial-gradient(circle at top left, rgba(156, 108, 255, 0.22), transparent 30%),
+    linear-gradient(180deg, rgba(5, 8, 16, 0.96), rgba(15, 18, 32, 0.92)),
     url("../assets/dragon.png");
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  .logo {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #7dd3fc;
-  box-shadow: 0 0 20px rgba(125, 211, 252, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 38px 80px rgba(0, 0, 0, 0.35);
 }
 
+.hero-copy {
+  max-width: 680px;
+}
+
+.hero-copy .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: #c1b3ff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  font-size: clamp(3rem, 4.8vw, 4.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+.hero-copy p {
+  margin: 1.6rem 0 2.2rem;
+  max-width: 600px;
+  color: #c9d0ea;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.hero-actions .btn.primary {
+  background: linear-gradient(135deg, #7d5cff, #7db3ff);
+  color: #090c18;
+}
+
+.hero-actions .btn.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #e7e9ff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.hero-actions .btn:hover {
+  transform: translateY(-2px);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  background: rgba(156, 108, 255, 0.12);
+  color: #dcdfff;
+  font-size: 0.92rem;
+  border: 1px solid rgba(156, 108, 255, 0.16);
+}
+
+.hero-media {
+  display: grid;
+  place-items: center;
+}
+
+.logo {
+  width: min(320px, 100%);
+  border-radius: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 34px 70px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  padding: 1rem;
+}
+
+@media (max-width: 960px) {
+  .header {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 2rem 1.5rem;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.6rem, 9vw, 3.6rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-copy p {
+    font-size: 1rem;
+  }
 }

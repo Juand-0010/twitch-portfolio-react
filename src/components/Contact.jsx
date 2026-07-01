@@ -2,48 +2,44 @@ import "./Contact.css";
 
 export default function Contact() {
   return (
-    <section className="contact">
-      <h2 className="reveal">🧩 Sobre el canal</h2>
+    <section id="contact" className="contact reveal">
+      <h2>🧩 Sobre el canal</h2>
 
-      <p className="reveal">
-        Este canal está dedicado a la construcción de rompecabezas 3D pieza por
-        pieza, explorando modelos detallados, estructuras complejas y diseños
-        creativos que requieren paciencia y concentración.
+      <p>
+        Aquí convergen los rompecabezas 3D y el gaming relajado. El canal está
+        diseñado para quienes disfrutan de contenido visualmente atractivo y de
+        una comunidad cercana.
       </p>
 
-      <p className="reveal">
-        Mientras armamos, también disfrutamos de videojuegos tranquilos que
-        acompañan el proceso, creando un ambiente relajado, amigable y sin
-        estrés.
+      <p>
+        Las transmisiones priorizan la calma, la creatividad y la interacción
+        positiva, con momentos de construcción, exploración y juego sin estrés.
       </p>
 
-      <h3 className="reveal">🎮 ¿Qué encontrarás aquí?</h3>
+      <h3>🎮 ¿Qué encontrarás aquí?</h3>
 
-      <ul className="content-list reveal">
-        <li>🧩 Construcción de rompecabezas 3D en tiempo real</li>
-        <li>🎮 Sesiones de videojuegos relajados</li>
-        <li>🛠️ Modelos épicos y construcciones imposibles</li>
-        <li>🎧 Charlas tranquilas con la comunidad</li>
-        <li>✨ Contenido creativo y sin prisas</li>
+      <ul className="content-list">
+        <li>Rompecabezas en vivo con enfoque en detalle y ritmo pausado.</li>
+        <li>Gaming tranquilo con títulos variados y participación de la audiencia.</li>
+        <li>Visuales temáticos de fantasía que refuerzan la identidad del canal.</li>
+        <li>Comunidad cordial y motivadora para nuevos espectadores.</li>
       </ul>
 
-      <h3 className="reveal">📬 Contacto y redes</h3>
+      <h3>📬 Contacto directo</h3>
 
-      <p className="reveal">
-        Si quieres apoyar el canal, colaborar o simplemente pasar a saludar,
-        aquí tienes algunos enlaces de contacto:
+      <p>
+        Conecta con el canal a través de las redes sociales o envía un mensaje para
+        saber más sobre próximas sesiones y colaboraciones.
       </p>
 
-      <div className="social-buttons reveal">
+      <div className="social-buttons">
         <a href="#" className="btn twitch">Twitch</a>
         <a href="#" className="btn youtube">YouTube</a>
         <a href="#" className="btn twitter">X / Twitter</a>
         <a href="#" className="btn discord">Discord</a>
       </div>
 
-      <p className="email reveal">
-        📧 contacto@canal-demo.com
-      </p>
+      <p className="email">📧 contacto@canal-demo.com</p>
     </section>
   );
 }

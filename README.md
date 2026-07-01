@@ -1,79 +1,45 @@
-🐉 Twitch – React + Vite
+# Twitch Portfolio React
 
-Web personal para un canal de Twitch enfocado en videojuegos, rompecabezas 3D y contenido creativo, desarrollado con React + Vite.
+Landing page profesional para un canal de Twitch con enfoque en rompecabezas 3D, gaming relajado y contenido creativo.
 
-El sitio funciona como carta de presentación del canal, mostrando información, contacto y enlaces a redes sociales, con una estética oscura y temática fantástica (dragón/fuego).
+## Características
 
-🚀 Tecnologías utilizadas
+- Diseño oscuro, moderno y visualmente atractivo
+- Sección de héroe con CTA y tags destacados
+- Componentes React modulares
+- Animaciones de entrada suaves con `IntersectionObserver`
+- Layout responsive para escritorio, tablet y móvil
 
-⚛️ React
+## Stack tecnológico
 
-⚡ Vite
+- React 19
+- Vite
+- CSS puro
 
-🎨 CSS puro
+## Mejoras aplicadas
 
-🧠 Componentes funcionales
+- Contenido estructurado en secciones claras
+- Estilo visual renovado y profesional
+- Contacto con botones de redes personalizados
+- Metadatos SEO mejorados en `index.html`
+- CSS validado y componente `Header` corregido
 
-🖥️ Diseño responsive
+## Uso
 
-🔥 Estilo visual inspirado en videojuegos y fantasía
+```powershell
+cd twitch-portfolio-react-temp
+npm install
+npm run dev
+```
 
-🎮 Sobre el canal
+## Generar build
 
-Este proyecto representa un canal de Twitch dedicado a:
+```powershell
+npm run build
+```
 
-🧩 Armado de rompecabezas 3D
+## Recomendaciones
 
-🎮 Videojuegos (variedad y exploración)
-
-🐉 Estética épica/fantástica
-
-🎥 Contenido creativo y entretenido en vivo
-
-El sitio web sirve como:
-
-Landing page
-
-Punto de contacto para la comunidad
-
-🧩 Componentes principales
-
-Header
-Logo y presentación del canal
-
-Contact
-Información extendida, botones de redes sociales y links de prueba
-
-Sección visual inicial
-Fondo temático con dragón estático que se desvanece al hacer scroll
-
-🌐 Despliegue
-
-Este proyecto puede desplegarse fácilmente en:
-
-GitHub Pages
-
-Vercel
-
-Netlify
-
-🎨 Estilo visual
-
-Fondo oscuro
-
-Acentos rojos / fuego
-
-Animaciones suaves
-
-Inspiración gaming y fantasía
-
-Enfoque en experiencia visual limpia
-
-📌 Estado del proyecto
-
-🟢 En desarrollo
-Se agregarán más animaciones, secciones y mejoras visuales.
-
-📜 Licencia
-
-Proyecto personal – uso libre con fines educativos o demostrativos.
+- Actualizar los enlaces de redes en `src/components/Contact.jsx`
+- Cambiar el logo en `src/assets/logo.png`
+- Desplegar en Vercel, Netlify o GitHub Pages

@@ -1,34 +1,100 @@
-/* HERO */
-.hero {
-  position: relative;
-  min-height: 100vh;
-  background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
-  display: flex;
+.page-content {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1rem 0 3rem;
+}
+
+.overview {
+  padding: 2.5rem 0 1rem;
+}
+
+.eyebrow {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  gap: 0.5rem;
+  color: #c0b1ff;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 1.25rem;
 }
 
-/* DRAGÓN */
-.dragon {
-  position: absolute;
-  bottom: 0;
-  right: 5%;
-  width: 420px;
-  opacity: 0.9;
-  pointer-events: none;
-  animation: floatDragon 6s ease-in-out infinite;
+.overview-grid,
+.feature-grid {
+  display: grid;
+  gap: 1.25rem;
 }
 
-/* ANIMACIÓN */
-@keyframes floatDragon {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-14px);
-  }
-  100% {
-    transform: translateY(0);
+.overview-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.overview-card,
+.feature-card {
+  padding: 1.75rem;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(14px);
+}
+
+.overview-card strong,
+.feature-card h3 {
+  display: block;
+  margin-bottom: 0.9rem;
+  color: #f3f3ff;
+  font-size: 1.15rem;
+}
+
+.overview-card p,
+.feature-card p {
+  line-height: 1.75;
+  color: #c8cde0;
+}
+
+.featured {
+  padding: 2.5rem 0;
+}
+
+.section-header {
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+.section-header span {
+  color: #b8b0ff;
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-header h2 {
+  margin: 1rem 0 1rem;
+  font-size: clamp(2rem, 2.7vw, 3.2rem);
+  line-height: 1.05;
+  color: #ffffff;
+}
+
+.section-header p {
+  max-width: 610px;
+  line-height: 1.8;
+  color: #bbc0dd;
+}
+
+.feature-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 1rem 3rem;
+  color: #8f94ac;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 720px) {
+  .section-header h2 {
+    font-size: 2.2rem;
   }
 }
