@@ -1,45 +1,4 @@
 import "./Contact.css";
-
 export default function Contact() {
-  return (
-    <section id="contact" className="contact reveal">
-      <h2>🧩 Sobre el canal</h2>
-
-      <p>
-        Aquí convergen los rompecabezas 3D y el gaming relajado. El canal está
-        diseñado para quienes disfrutan de contenido visualmente atractivo y de
-        una comunidad cercana.
-      </p>
-
-      <p>
-        Las transmisiones priorizan la calma, la creatividad y la interacción
-        positiva, con momentos de construcción, exploración y juego sin estrés.
-      </p>
-
-      <h3>🎮 ¿Qué encontrarás aquí?</h3>
-
-      <ul className="content-list">
-        <li>Rompecabezas en vivo con enfoque en detalle y ritmo pausado.</li>
-        <li>Gaming tranquilo con títulos variados y participación de la audiencia.</li>
-        <li>Visuales temáticos de fantasía que refuerzan la identidad del canal.</li>
-        <li>Comunidad cordial y motivadora para nuevos espectadores.</li>
-      </ul>
-
-      <h3>📬 Contacto directo</h3>
-
-      <p>
-        Conecta con el canal a través de las redes sociales o envía un mensaje para
-        saber más sobre próximas sesiones y colaboraciones.
-      </p>
-
-      <div className="social-buttons">
-        <a href="#" className="btn twitch">Twitch</a>
-        <a href="#" className="btn youtube">YouTube</a>
-        <a href="#" className="btn twitter">X / Twitter</a>
-        <a href="#" className="btn discord">Discord</a>
-      </div>
-
-      <p className="email">📧 contacto@canal-demo.com</p>
-    </section>
-  );
+  return <section id="contacto" className="contact reveal" aria-labelledby="contact-title"><div className="contact-copy"><p className="section-kicker">Mantente cerca</p><h2 id="contact-title">El canal está preparando sus próximos directos.</h2><p>Guarda esta página y sigue el repositorio para encontrar las próximas actualizaciones del canal y de esta experiencia.</p></div><div className="contact-actions"><a className="button primary" href="https://www.twitch.tv/" target="_blank" rel="noreferrer">Abrir Twitch <span aria-hidden="true">↗</span></a><a className="button github-button" href="https://github.com/Juand-0010" target="_blank" rel="noreferrer">Perfil de GitHub <span aria-hidden="true">↗</span></a><p className="contact-note">El enlace del canal de Twitch se puede actualizar en <code>src/components/Contact.jsx</code> cuando esté disponible.</p></div></section>;
 }
