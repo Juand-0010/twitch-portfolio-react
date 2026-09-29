@@ -85,3 +85,6 @@
   color: #9fa6c8;
   margin-top: 2rem;
 }
+
+.contact { display: grid; grid-template-columns: 1.1fr .9fr; gap: 4rem; align-items: center; margin: 2rem 0 6rem; padding: clamp(2rem, 5vw, 4.5rem); text-align: left; background: linear-gradient(135deg, #17112b, #0d1120 55%); }.contact h2 { max-width: 660px; margin: 0 0 1rem; text-align: left; line-height: 1.05; letter-spacing: -.035em; }.contact p { margin: 0; text-align: left; color: #c6cada; }.contact-actions { display: flex; align-items: flex-start; flex-direction: column; gap: .9rem; }.github-button { color: #e9e6f3; border: 1px solid rgba(255,255,255,.22); }.contact-note { max-width: 330px; margin-top: .75rem !important; font-size: .78rem; line-height: 1.55; color: #969bb3 !important; }.contact-note code { color: #d6c6ff; }
+@media (max-width: 700px) { .contact { grid-template-columns: 1fr; gap: 2rem; margin-bottom: 4rem; }.contact h2 { text-align: left; }.contact p { text-align: left; } }

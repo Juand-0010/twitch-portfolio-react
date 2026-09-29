@@ -70,6 +70,11 @@ select {
   background: rgba(156, 108, 255, 0.35);
 }
 
+body { overflow-x: hidden; }
+.app-shell { min-height: 100vh; }
+.button:focus-visible, a:focus-visible { outline: 3px solid #d7c8ff; outline-offset: 4px; }
+.section-kicker { margin: 0 0 .8rem; color: #bdaaff; font-size: .72rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+
 .reveal {
   opacity: 0;
   transform: translateY(30px);
